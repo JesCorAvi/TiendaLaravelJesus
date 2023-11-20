@@ -12,12 +12,12 @@
 
         <div>
             <x-input-label for="precio" :value="'Precio de la denominacion'" />
-            <x-text-input id="precio" class="block mt-1 w-full" type="number" name="precio" :value="old('precio', $articulo->precio)" required autofocus autocomplete="precio" />
+            <x-text-input id="precio" class="block mt-1 w-full" type="text" name="precio" :value="old('precio', $articulo->precio)" required autofocus autocomplete="precio" />
             <x-input-error :messages="$errors->get('precio')" class="mt-2" />
         </div>
         <div>
             <x-input-label for="categoria_id" :value="'Catgoria a la que pertenece'" />
-            <x-text-input id="categoria_id" class="block mt-1 w-full" type="numbre" name="categoria_id" :value="old('categoria_id', $articulo->categoria_id)" required autofocus autocomplete="categoria_id" />
+            <x-text-input id="categoria_id" class="block mt-1 w-full" type="text" name="categoria_id" :value="old('categoria_id', $articulo->categoria_id)" required autofocus autocomplete="categoria_id" />
             <x-input-error :messages="$errors->get('categoria_id')" class="mt-2" />
         </div>
 

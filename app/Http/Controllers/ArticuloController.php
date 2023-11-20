@@ -32,6 +32,9 @@ class ArticuloController extends Controller
     {
         $validated = $request->validate([
             'denominacion' => 'required|max:255',
+            'precio' => 'required',
+            'categoria_id' => 'required',
+
         ]);
 
         $articulo = new Articulo();
